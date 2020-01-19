@@ -47,8 +47,10 @@ int main() {
                     memoria[p] = getchar();
                     break;
                 case '[': // Início do loop: Executa o código delimitado até que o byte na posição indicada pelo ponteiro seja igual a zero.
+                    // TODO: position stack control
                     break;
                 case ']': // Fim do loop.
+                    // TODO: position stack control and pointer value verification
                     break;
                 case '#': // Imprime os valores das 10 primeiras posições do vetor.
                     printf("\nsaida 10: ", memoria[p]);
