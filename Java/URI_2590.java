@@ -24,22 +24,23 @@ public class URI_2590 {
             int expoente = Integer.parseInt(leitor.readLine()); // Integer.MAX_VALUE > 10^9
             int fatiaDaPizza = expoente % 8;
 
-            if (fatiaDaPizza == 0) {
-                System.out.println("1");
-            } else if (fatiaDaPizza == 1) {
-                System.out.println("7");
-            } else if (fatiaDaPizza == 2) {
-                System.out.println("9");
-            } else if (fatiaDaPizza == 3) {
-                System.out.println("3");
-            } else if (fatiaDaPizza == 4) {
-                System.out.println("1");
-            } else if (fatiaDaPizza == 5) {
-                System.out.println("7");
-            } else if (fatiaDaPizza == 6) {
-                System.out.println("9");
-            } else if (fatiaDaPizza == 7) {
-                System.out.println("3");
+            switch (fatiaDaPizza) {
+                case 0:
+                case 4:
+                    System.out.println('1');
+                    break;
+                case 1:
+                case 5:
+                    System.out.println('7');
+                    break;
+                case 2:
+                case 6:
+                    System.out.println('9');
+                    break;
+                case 3:
+                case 7:
+                    System.out.println('3');
+                    break;
             }
         }
 
